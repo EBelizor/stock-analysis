@@ -9,7 +9,6 @@ When we analyze the stocks we see a stark difference in the performance of these
 
 Our initial code relied heavily on nested loops, and while nested loops are very effective, the code can be very inefficient when it comes to the potential of expanding our data set. Nested loops run iterations of other loops within the main loop, and while the code runs perfectly fine the issues start to arise when we increase our data set. Our initial analysis ran the data in .25 seconds for 2017 and 2018. 
 
-![](stock-analyis/resources/origin_code)
 
 
 Our refractored code was able to dramitically decrease the run time to .053 seconds. This difference comes from us using arrays coupled with for loops to alleviate the stress of nested loops in our code. Using arrays allows us to store values of similar variable types so that we can command VBA to lookbak on that array and any number that is linked to a vallue in that array will be pulled for that specific loop! Doing so allows for us to 
