@@ -13,7 +13,7 @@ Our initial code relied heavily on nested loops, and while nested loops are very
 
 ### Refractored Code
 
-We can see in the image above that our initial "For" statement does not end imediately, rather within the statement there is another for loop within it. Our refractored code was able to dramitically decrease the run time to .053 seconds. 
+We can see in the image above that our initial "For" statement does not end imediately, rather within the statement there is another for loop within it. Our refractored code was able to dramitically decrease the run time to .046 seconds. 
 
 ![](Resources/Refractored_runTime.png)
 
