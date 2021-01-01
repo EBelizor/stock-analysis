@@ -7,12 +7,17 @@ In this challenge we are helping Steve as he assists his parents in managing the
 ## Results 
 When we analyze the stocks we see a stark difference in the performance of these stocks by just looking at the colors of our conditional formatting for our returns. When we look at 2017 we see a lot of green (positive returns), in terms of our returns meaning that this was a great year for “green” stocks or stocks in general. “DQ” easily  outperformed all of the green stocks that were in our data set as it yielded a whopping 199.4% return rate. However, the following year it performed the most poorly yielding a concerning -62.6% return rate.
 
-Our initial code relied heavily on nested loops, and while nested loops are very effective, the code can be very inefficient when it comes to the potential of expanding our data set. Nested loops run iterations of other loops within the main loop, and while the code runs perfectly fine the issues start to arise when we increase our data set. Our initial analysis ran the data in .25 seconds for 2017 and 2018. 
+Our initial code relied heavily on nested loops, and while nested loops are very effective, the code can be very inefficient when it comes to the potential of expanding our data set. Nested loops run iterations of other loops within the main loop, and while the code runs perfectly fine the issues start to arise when we increase our data set. Our initial analysis ran the data in .25 seconds for 2017 and 2018. The original code is shown below.
 
+![](Resources/Origin_Code.png)
 
+We can see in the image above that our initial "For" statement does not end imediately, rather within the statement there is another for loop within it. Our refractored code was able to dramitically decrease the run time to .053 seconds. 
 
-Our refractored code was able to dramitically decrease the run time to .053 seconds. This difference comes from us using arrays coupled with for loops to alleviate the stress of nested loops in our code. Using arrays allows us to store values of similar variable types so that we can command VBA to lookbak on that array and any number that is linked to a vallue in that array will be pulled for that specific loop! Doing so allows for us to 
+![](Resources/Refractored_runTime.png)
 
+This difference comes from us using our previously defined arrays coupled with for loops to alleviate the stress of nested loops in our code. Using arrays allows us to store values of similar variable types so that we can command VBA to lookbak on that array and any number that is linked to a vallue in that array will be pulled for that specific loop. Doing so allows for us to use that memory to our advantage and run code that call onto those arrays, allowing us to avoid the large "for statements within for statements" that seem to run forever. The new way of designating our variables as arrays that can call to the original arrays allows for us to right more consise "for" statements. 
+
+![](Resources/Refrac_code.png)
 
 ## Summary 
   
